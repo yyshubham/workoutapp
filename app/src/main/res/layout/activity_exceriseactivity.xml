@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".exceriseactivity">
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize"
+    android:background="#000000"
+    app:titleTextColor="@color/yel"
+
+    />
+    <LinearLayout
+        android:id="@+id/llrestview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ready"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" for"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvnextex"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="upcoming ex"
+            android:textColor="#A1A0A0"
+            android:textStyle="italic"
+            />
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bttnshadow">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/timereffect"
+                android:indeterminate="false"
+                android:max="10"
+                android:progress="100"
+                android:progressDrawable="@drawable/timerprogressbar"
+                android:rotation="-90"/>
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/timerroundbtn"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/tvtimer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic"
+                    android:text="10"/>
+
+
+
+
+            </LinearLayout>
+            
+            
+            
+            
+            
+            
+        </FrameLayout>
+       </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/exerciseview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:gravity="center"
+
+        android:visibility="visible"
+        android:orientation="vertical">
+        <ImageView
+
+            android:id="@+id/eximg"
+            android:layout_width="320dp"
+            android:layout_height="250dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="100dp"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Excersise"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" NO "
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"/>
+            <TextView
+                android:id="@+id/exno"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/exname"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="name of ex"
+            android:textStyle="italic"
+            android:textColor="#A1A0A0"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bttnshadow">
+
+                <ProgressBar
+                    android:id="@+id/exprogressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/timereffect"
+                    android:indeterminate="false"
+                    android:max="30"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/timerprogressbar"
+                    android:rotation="-90"/>
+                <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/timerroundbtn"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/extvtimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="30sp"
+                        android:textStyle="bold|italic"
+                        android:text="10"/>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
